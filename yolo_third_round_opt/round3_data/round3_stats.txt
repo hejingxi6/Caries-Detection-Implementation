@@ -1,0 +1,12 @@
+=== Round 3 Lesion Mix Stats ===
+Original train dir: D:\projects\yolov8_caries_detector_clean\yolo_dataset\train\images
+Original labels dir: D:\projects\yolov8_caries_detector_clean\yolo_dataset\train\labels
+Generated yaml: D:\projects\yolo_third_round_opt\round3_data\data_round3.yaml
+Generated train list: D:\projects\yolo_third_round_opt\round3_data\train_round3.txt
+Original repeated entries: 5683
+Crop repeated entries: 8532
+Generated crops: 4125
+Total train entries: 14215
+Repeat map: {0: 3, 1: 2, 2: 6}
+Crop repeat map: {0: 2, 1: 2, 2: 4}
+Lesion classes: [0, 1, 2]

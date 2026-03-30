@@ -1,0 +1,20 @@
+=== Rebalanced Train List Stats ===
+Original train dir: D:\projects\yolov8_caries_detector_clean\yolo_dataset\train\images
+Labels dir: D:\projects\yolov8_caries_detector_clean\yolo_dataset\train\labels
+Output train list: D:\projects\yolo_second_round_opt\rebalanced_data\train_rebalanced.txt
+Repeat map: {0: 2, 1: 2, 2: 4}
+Background repeat: 1
+Total original labeled images: 1991
+Total train entries after repeat: 3540
+
+Class image counts (images containing class):
+  class 0: 964
+  class 1: 817
+  class 2: 131
+  class 3: 1989
+
+Repeat distribution:
+  repeat_2: 1156
+  background_or_tooth_only: 704
+  repeat_1: 704
+  repeat_4: 131

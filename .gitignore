@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual env
+venv/
+.venv/
+env/
+
+# YOLO outputs
+runs/
+weights/
+checkpoints/
+cache/
+logs/
+
+# Large model files
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Dataset-like folders
+datasets/
+data/
+images/
+labels/
+
+# IDE
+.vscode/
+.idea/
+
+# System
+Thumbs.db
+.DS_Store
+*.cache

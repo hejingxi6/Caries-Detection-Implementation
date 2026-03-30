@@ -1,0 +1,122 @@
+{
+  "original_entries": 5683,
+  "crop_entries": 8532,
+  "total_train_entries": 14215,
+  "generated_crops": 4125,
+  "repeat_map": {
+    "0": 3,
+    "1": 2,
+    "2": 6
+  },
+  "crop_repeat_map": {
+    "0": 2,
+    "1": 2,
+    "2": 4
+  },
+  "lesion_classes": [
+    0,
+    1,
+    2
+  ],
+  "class_presence": {
+    "0": 964,
+    "3": 1989,
+    "1": 817,
+    "2": 131
+  },
+  "image_repeat_stats": {
+    "repeat_3": 205,
+    "repeat_4": 806,
+    "repeat_1": 704,
+    "repeat_2": 145,
+    "repeat_6": 67,
+    "repeat_7": 64
+  },
+  "lesion_crop_stats": {
+    "class_0_crop_repeat_2": 2882,
+    "class_1_crop_repeat_2": 1102,
+    "class_2_crop_repeat_4": 141
+  },
+  "top_cropped_images": [
+    [
+      "100_jpg.rf.b82625b276769d80f0c12c1f0b318d6f.jpg",
+      6
+    ],
+    [
+      "1020_jpg.rf.45bf4df271eb2b540fe792f3f8296a4f.jpg",
+      6
+    ],
+    [
+      "1022_jpg.rf.ccbdd9433ba7c228563270cbd8a6a43b.jpg",
+      6
+    ],
+    [
+      "1026_jpg.rf.310dc093ea3009f181684283dfb7818f.jpg",
+      6
+    ],
+    [
+      "1046_jpg.rf.479cde89c8f184ecdf8f9b011db990fd.jpg",
+      6
+    ],
+    [
+      "1051_jpg.rf.7b3c393eecc1b1e3461853b4dd070856.jpg",
+      6
+    ],
+    [
+      "1146_jpg.rf.679ff48fcf641c130a574cb01daa0f95.jpg",
+      6
+    ],
+    [
+      "1158_jpg.rf.77ed8f0a2f78c6121b2e2dc33a78d5b2.jpg",
+      6
+    ],
+    [
+      "1159_jpg.rf.610674da59a95150576dcd2c8b8b7b64.jpg",
+      6
+    ],
+    [
+      "1169_jpg.rf.8cd909719de8599ef0686bd379882ddd.jpg",
+      6
+    ],
+    [
+      "1191_jpg.rf.f80763a20e4df62faa380475b1095fd2.jpg",
+      6
+    ],
+    [
+      "1204_jpg.rf.7f2fe6d6c3498bfb754245643c4081ee.jpg",
+      6
+    ],
+    [
+      "1225_jpg.rf.08f8e343e79735207896aac5541d6c8d.jpg",
+      6
+    ],
+    [
+      "1231_jpg.rf.8aa435895c636d5741de45cf7f9bebe3.jpg",
+      6
+    ],
+    [
+      "1245_jpg.rf.1dfbd486eb7bae870b4d3cef6467d507.jpg",
+      6
+    ],
+    [
+      "1256_jpg.rf.3768d1103552f3518a05b059f0940c21.jpg",
+      6
+    ],
+    [
+      "125_jpg.rf.71e7ad3d52e5d86defb2d90a87fd8c92.jpg",
+      6
+    ],
+    [
+      "1281_jpg.rf.6e164121513ff46f3a1142fe36d55777.jpg",
+      6
+    ],
+    [
+      "1303_jpg.rf.88373045f4a213026c1857b6234c53ee.jpg",
+      6
+    ],
+    [
+      "1305_jpg.rf.842a39b87e785aed0a63f2f879b23f87.jpg",
+      6
+    ]
+  ]
+}

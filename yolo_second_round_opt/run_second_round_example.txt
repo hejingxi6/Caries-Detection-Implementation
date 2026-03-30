@@ -1,0 +1,8 @@
+# Step 1: build rebalanced train list
+python build_rebalanced_train_list.py --data D:\projects\yolov8_caries_detector_clean\yolo_dataset\data.yaml --out_dir D:\projects\yolo_second_round_opt\rebalanced_data --repeat_map 0:2,1:2,2:4 --background_repeat 1
+
+# Step 2: train second round
+python train_second_round.py --data D:\projects\yolo_second_round_opt\rebalanced_data\data_rebalanced.yaml --weights yolov8m.pt --project runs/second_round --name rebalance_imgsz768 --imgsz 768 --epochs 60 --batch 4 --device 0 --pretrained
+
+# Optional heavier version for overnight
+python train_second_round.py --data D:\projects\yolo_second_round_opt\rebalanced_data\data_rebalanced.yaml --weights yolov8m.pt --project runs/second_round --name rebalance_imgsz960 --imgsz 960 --epochs 80 --batch 2 --device 0 --pretrained
