@@ -1,0 +1,34 @@
+【核心目标】
+从“tooth 极大类 + lesion 小样本混在一个四类 end-to-end detector”
+改成
+“Stage 1 学整体前景定位，Stage 2 只学 lesion 三类”。
+
+【为什么这版比继续调四类 YOLO 更激进】
+1. 把 tooth 从最终分类任务里拿掉，减少类别不平衡。
+2. 先做 ROI 裁图，把病灶有效放大。
+3. Stage 2 只保留 lesion 三类，等于把模型容量集中用在真正难的部位。
+4. 全局 mean/std 先算出来，Stage 1 直接用，Stage 2 还能可选全局归一化导出。
+
+【阶段说明】
+Stage 1（binary seg）
+- 监督：用当前 bbox 标签 rasterize 成 mask
+- 任务：学 tooth + lesion 的整体前景区域
+- 模型：TinyUNet
+- 输入：768
+- 输出：mask + ROI bbox
+
+Stage 2（lesion-only detect）
+- 监督：当前 bbox 标签，但只保留 lesion 三类
+- 输入：Stage 1 ROI 裁图
+- 模型：YOLOv8m
+- 输入：960
+- 输出：三类 lesion-only 结果
+
+【风险】
+1. 当前标签不是 polygon，Stage 1 只是 pseudo segmentation，不是真 mask 监督。
+2. 如果 Stage 1 预测 ROI 很差，Stage 2 会被拖累。
+3. 这套方案激进，训练链条比单模型长。
+
+【为什么仍然值得试】
+因为你现在最大的痛点就是 tooth 太多，小 lesion 太弱。
+继续在原始四类 end-to-end 检测上调参，收益已经越来越小。

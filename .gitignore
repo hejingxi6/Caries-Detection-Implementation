@@ -3,7 +3,18 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-
+*.pyc
+runs/
+runs_stage1/
+runs_stage2/
+stage1_binary/
+stage1_pred/
+stage2_lesion3/
+stage2_lesion3_v2/
+stage2_lesion3_v3/
+hard_cases_stage2_val/
+*.pt
+*.png
 # Jupyter
 .ipynb_checkpoints/
 

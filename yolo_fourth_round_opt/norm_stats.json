@@ -1,0 +1,13 @@
+{
+  "train_mean_rgb": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "train_std_rgb": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "num_images": 0
+}

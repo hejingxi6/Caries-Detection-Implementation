@@ -1,0 +1,10 @@
+train: D:\projects\yolov8_caries_detector_clean\yolo_dataset\train\images
+val: D:\projects\yolov8_caries_detector_clean\yolo_dataset\val\images
+test: D:\projects\yolov8_caries_detector_clean\yolo_dataset\test\images
+
+nc: 4
+names:
+  - Caries
+  - Cavity
+  - Crack
+  - Tooth
